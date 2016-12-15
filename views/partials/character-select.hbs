@@ -1,0 +1,24 @@
+<!-- The character selection modal that pops up as soon as the page loads -->
+<div id="character-select" class="modal fade">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Select Character</h4>
+      </div>
+      <div class="modal-body">
+
+        <img class="img-responsive img-rounded" id="avatar" src="/images/howard-moon.jpg"/>
+
+        <select id="character">
+          {{#each characters}}
+          <option avatar="{{avatar}}" value="{{name}}">{{name}}</option>
+          {{/each}}
+        </select>
+
+      </div>
+      <div id="character-select-button" class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
+      </div>
+    </div>
+  </div>
+</div>

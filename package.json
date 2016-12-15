@@ -1,0 +1,19 @@
+{
+  "name": "boosh-off",
+  "version": "0.0.1",
+  "description": "Come with us now, on a journey through time and space, to the world of The Mighty Boosh!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: The Boosh is loose and we're a little bit raw!\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "escape-html": "^1.0.3",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "socket.io": "^1.7.2"
+  }
+}

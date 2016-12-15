@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#avatar {
+  margin-bottom: 15px;
+}
+
+#input {
+  background: #000;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+#messages {
+  font-size: 18px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#messages h3 {
+  color: blue;
+}
+
+#messages img {
+  float:left;
+  height:100px;
+  margin-right: 20px;
+}
+
+#messages li {
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+
+#messages li:nth-child(odd) {
+  background: #eee;
+}
