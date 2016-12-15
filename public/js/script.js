@@ -23,6 +23,7 @@
 
     // Handle clicking okay on character select modal
     $('#character-select-button').click(function (event) {
+      $("#theme-tune").each(function () { this.pause() })
       avatar = $('#avatar').attr('src')
       character = $('#character').val()
     })
@@ -47,6 +48,9 @@
 
     // Clear the text box
     $('#text').val('')
+
+    //scroll to bottom
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
   })
 
   // Handle receiving a message from the server

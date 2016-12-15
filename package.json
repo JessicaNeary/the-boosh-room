@@ -4,6 +4,8 @@
   "description": "Come with us now, on a journey through time and space, to the world of The Mighty Boosh!",
   "main": "index.js",
   "scripts": {
+    "knex": "knex",
+    "postinstall": "knex migrate:latest && knex seed:run",
     "start": "node index",
     "test": "echo \"Error: The Boosh is loose and we're a little bit raw!\" && exit 1"
   },
@@ -14,6 +16,11 @@
     "escape-html": "^1.0.3",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
+    "knex": "^0.12.6",
+    "pg": "^6.1.2",
     "socket.io": "^1.7.2"
+  },
+  "devDependencies": {
+    "sqlite3": "^3.1.8"
   }
 }

@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,11 +16,24 @@
   width: 100%;
 }
 
+/*#chat{
+  height: 100%;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+}*/
+
+/*#form-group{
+  height: 100%;
+  position:
+}*/
+
 #messages {
   font-size: 18px;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  overflow-y: scroll;
+  height: 90%;
+  width: 100%;
+  position: fixed;
 }
 
 #messages h3 {
