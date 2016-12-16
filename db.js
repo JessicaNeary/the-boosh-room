@@ -3,10 +3,16 @@ const config = require('./knexfile')[environment]
 const knex = require('knex')(config)
 
 module.exports = {
-  getCharacters
+  getCharacters,
+  getSounds
 }
 
 function getCharacters() {
   return knex('characters')
+    .select()
+}
+
+function getSounds() {
+  return knex('sounds')
     .select()
 }
