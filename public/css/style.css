@@ -5,7 +5,7 @@
   padding: 0;
 }
 h1 {
-  
+
 }
 #avatar {
   margin-bottom: 15px;
@@ -52,6 +52,7 @@ h1 {
 
 #messages {
   padding: 10px;
+  padding-top: 50px;
   font-size: 18px;
   list-style-type: none;
   overflow-y: scroll;

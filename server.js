@@ -11,6 +11,8 @@ const io = require('socket.io')(http)
 
 module.exports = http
 
+const members = new Set()
+
 app.engine('hbs', handlebars({
   defaultLayout: 'main.hbs',
   extname: 'hbs'
@@ -23,6 +25,10 @@ app.get('/', routes.getIndex)
 
 // Handle new connection
 io.on('connection', socket => {
+
+  // socket.on('character selected', character => {
+  //   members.add(character)
+  // })
 
   // Handle recieving message from client
   socket.on('boosh message', message => {
@@ -37,3 +43,20 @@ io.on('connection', socket => {
     })
   })
 })
+
+// io.on('disconnect', function () {
+//
+//   clients
+//
+//   membersChanged()
+//
+// })
+//
+// function membersChanged() {
+//
+//   const members = Array.from(clients.values())
+//
+//   io.emit('members changed', {
+//     members
+//   })
+// }
