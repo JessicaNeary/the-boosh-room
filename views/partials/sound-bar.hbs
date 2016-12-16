@@ -1,0 +1,17 @@
+    <div class="btn-group dropup media-menu">
+      <button type="button" class="btn btn-default">Dropup</button>
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        {{#each sounds}}
+          <button type="button" class="sound-button" name="button" onclick="">{{name}}</button>
+          <audio controls autoplay "soundbite" style="display:none">
+            <source src="/audio/{{sound}}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        {{/each}}
+        <!-- Dropdown menu links -->
+      </ul>
+    </div>
