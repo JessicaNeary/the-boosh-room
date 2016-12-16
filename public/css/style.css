@@ -59,10 +59,11 @@ h1 {
   height: 90%;
   width: 100%;
   position: fixed;
+  background-color: #B7EEF4;
 }
 
 #messages h3 {
-  color: blue;
+  color: #00DCF4;
 }
 
 #messages img {
@@ -72,6 +73,7 @@ h1 {
 }
 
 #messages li {
+  padding-top: 30px;
   padding-left: 30px;
   padding-bottom: 50px;
 }
