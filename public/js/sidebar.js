@@ -28,3 +28,5 @@ $(document).ready(function()
 		$("#sidebar-wrapper").toggleClass("active",true);		//instead on click event toggle active CSS element
 		e.preventDefault();										//prevent the default action ("Do not remove as the code
 	});
+
+})
