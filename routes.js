@@ -11,8 +11,8 @@ function getIndex(req, res){
   ])
     .then(function (values) {
       var object = {
-        var characters = values[0]
-        var sounds = values[1]
+        characters: values[0],
+        sounds: values[1]
       }
       res.render('index', object)
     })
