@@ -62,7 +62,7 @@ h1 {
 }
 
 #messages h3 {
-  color: blue;
+  color: #00DCF4;
 }
 
 #messages img {
@@ -72,6 +72,7 @@ h1 {
 }
 
 #messages li {
+  padding-top: 30px;
   padding-left: 30px;
   padding-bottom: 50px;
 }
