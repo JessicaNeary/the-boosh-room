@@ -9,25 +9,47 @@
   margin-bottom: 15px;
 }
 
-#input {
+#input-message {
   background: #000;
   bottom: 0;
   position: fixed;
-  width: 100%;
+  padding: 10px;
+  /*width: 100%;*/
+  /*height: 200px;*/
 }
 
-/*#chat{
-  height: 100%;
-  margin-bottom: 10px;
-  overflow-y: scroll;
+#text{
+  font-size: 1.5em;
+  rows: 5;
+  width: 100%;
+  /*height: 200px;*/
+  /*resize: none;*/
+}
+
+/*.input-text{
+  height: 300px;
 }*/
 
-/*#form-group{
+/*
+
+.input-group .form-group {
+  padding-left: 10%;
+  padding-right: 20px;
+  position: fixed;
+  width: 100%;
   height: 100%;
-  position:
+}
+
+.input-group #media-menu {
+  width: 10%;
+  position: relative;
+  height: 100%;
+
 }*/
+
 
 #messages {
+  padding: 10px;
   font-size: 18px;
   list-style-type: none;
   overflow-y: scroll;

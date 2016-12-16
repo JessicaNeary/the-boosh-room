@@ -30,7 +30,7 @@
   })
 
   // Handle user submitting input
-  $('#input').submit(function (event) {
+  $('#input-message').submit(function (event) {
 
     // Stop the form from sending an HTTP request
     event.preventDefault()
@@ -48,9 +48,6 @@
 
     // Clear the text box
     $('#text').val('')
-
-    //scroll to bottom
-    $('#messages').scrollTop($('#messages')[0].scrollHeight);
   })
 
   // Handle receiving a message from the server
@@ -74,7 +71,7 @@
         </li>`)
 
     // Scroll to the bottom of the page
-    window.scrollTo(0, document.body.scrollHeight)
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
   })
 
 })()
