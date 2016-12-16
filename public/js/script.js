@@ -53,6 +53,8 @@
   // Handle receiving a message from the server
   socket.on('boosh message', function (data) {
 
+    console.log('message from server')
+
     var avatar = data.avatar
     var character = data.character
     var text = data.text
