@@ -36,8 +36,15 @@
 
 
   <form id="input-message">
+
+    <div class="sound-buttons">
+      {{#each sounds}}
+        <button type="button" name="button" onclick="new Audio('/audio/{{sound}}').play()">{{name}}</button>
+      {{/each}}
+    </div>
+
+
     <div class="input-group">
-      <span class="input-group-addon" id="basic-addon1">+</span>
         <input type="textarea" id="text" rows="5">
     </div>
   </form>
