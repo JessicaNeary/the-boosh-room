@@ -249,6 +249,7 @@ section{
 }
 
 #member-list li {
+  color: #ff3dc1;
   padding: 20px;
   margin: 10px;
 }
