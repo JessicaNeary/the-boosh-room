@@ -1,2 +1,2 @@
 # the-boosh-room
-Come with us now, on a journey through time and space, to the world of The Mighty Boosh!
+A Mighty Boosh themed chat-room, made in one day as a group project for Enspiral Dev Academy.
